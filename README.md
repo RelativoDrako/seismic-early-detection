@@ -1,4 +1,4 @@
-🌎 Seismic Early Detection & Impact Prediction System
+# 🌎 Seismic Early Detection & Impact Prediction System
 
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)
 ![License](https://img.shields.io/badge/license-Apache%202.0-green)
@@ -95,11 +95,12 @@ PowerShell 5.1 or PowerShell 7+
 
 Git (optional, recommended)
 
-## Verify Python installation(Powershell):
+
+### Verify Python installation(Powershell):
 ```bash
 python --version
 ```
-## 🚀 Quick Start
+### 🚀 Quick Start
 
 1️⃣ Clone the repository
 ```bash
@@ -114,9 +115,8 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```powershell
 .\setup_seismic.ps1
 ```
-
-## This script will:
-
+---
+### This script will:
 Create the folder structure
 
 Generate base configuration files
@@ -124,7 +124,7 @@ Generate base configuration files
 Create a Python virtual environment
 
 Install all required dependencies
-
+---
 4️⃣ Run the full pipeline
 ```powershell
 .\deploy_seismic.ps1
