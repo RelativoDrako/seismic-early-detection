@@ -1,99 +1,183 @@
-# Seismic Early Detection & Impact Prediction System
+🌎 Seismic Early Detection & Impact Prediction System
 
-An **applied AI system** designed to explore **early seismic signal detection and impact estimation** under **real-world operational constraints**.
+![Python](https://img.shields.io/badge/python-3.10%2B-blue)
+![License](https://img.shields.io/badge/license-Apache%202.0-green)
+![Status](https://img.shields.io/badge/status-research--active-orange)
 
-This project prioritizes:
-- low latency
-- reliability
-- failure awareness
-- edge-first deployment
+An **applied AI research project** focused on **early seismic signal detection and impact estimation** under **real-world operational constraints**.
 
-over pure model accuracy.
+This repository is designed to demonstrate:
+
+- System-level thinking  
+- Applied machine learning in safety-critical contexts  
+- Edge-first architectural decisions  
+- Robustness over raw accuracy  
 
 ---
 
 ## 🎯 Problem Context
 
-Seismic early warning systems face a fundamental trade-off:
+Seismic early warning systems must operate under severe constraints:
 
-- Detect events **early**, with limited and noisy data
-- Avoid false positives that can trigger costly or dangerous responses
-- Operate under **strict latency and infrastructure constraints**
+- Very limited early signal windows  
+- Noisy and incomplete data  
+- High cost of false positives  
+- Strict latency requirements  
+- Unreliable network connectivity  
 
-Many AI prototypes ignore these realities.
+Many ML prototypes ignore these realities.
 
-This project explicitly models them.
+**This project explicitly models them.**
 
 ---
 
-## 🧠 System Philosophy
+## 🧠 Design Philosophy
 
-> *In safety-critical systems, a correct late decision can be worse than an approximate early one.*
+> *In safety-critical systems, an approximate early decision is often more valuable than a perfect late one.*
 
-This system is designed as:
-- **edge-first**
-- **confidence-aware**
-- **failure-tolerant**
-- **human-override capable**
+Core principles:
+
+- Edge-first inference  
+- Low-latency pipelines  
+- Failure awareness  
+- Confidence-based decisions  
+- Human-override capability  
 
 ---
 
 ## 🏗️ High-Level Architecture
 
-Core components:
-1. Seismic signal ingestion (simulated / real datasets)
-2. Edge preprocessing and feature extraction
-3. Lightweight predictive models
-4. Decision logic with confidence thresholds
-5. Alert escalation and fallback mechanisms
+End-to-end pipeline:
 
-Detailed diagrams available in `/architecture`.
+1. Seismic signal generation (simulated)  
+2. Signal preprocessing and feature extraction  
+3. Lightweight baseline ML models  
+4. Confidence-aware decision logic  
+5. Evaluation under noise and failure scenarios  
 
----
+Architecture diagrams and design decisions are documented in:
 
-## ⚙️ Why Edge-First?
-
-- Network latency is unpredictable
-- Cloud dependency increases risk
-- Early detection requires **local inference**
-
-See `/decisions/adr-001-edge-first.md`.
+- `/architecture`  
+- `/decisions`  
 
 ---
 
-## 📏 What This Project Is NOT
+## 📁 Repository Structure
 
-- ❌ Not a real-time public warning system
-- ❌ Not a production-ready life-critical product
-- ❌ Not a pure ML benchmark
+```text
+seismic-early-detection/
+├── architecture/          # System diagrams and architectural notes
+├── data/
+│   ├── raw/               # Raw seismic or synthetic inputs
+│   ├── processed/         # Cleaned and feature-engineered data
+│   └── simulated/         # Synthetic seismic signal generation
+├── models/
+│   ├── baseline/          # Simple, interpretable reference models
+│   └── experimental/      # Advanced or exploratory models
+├── src/                   # Core pipeline source code
+├── edge/                  # Edge-oriented inference logic
+├── evaluation/            # Metrics and robustness evaluation
+├── decisions/             # Architecture Decision Records (ADRs)
+├── setup_seismic.ps1      # Project initialization script
+├── deploy_seismic.ps1     # End-to-end pipeline execution
+├── requirements.txt       # Python dependencies
+├── README.md
+├── LICENSE
+└── DISCLAIMER.md
+```
 
-It is a **design and experimentation platform** for applied AI in critical contexts.
+## ⚙️ Prerequisites
+Windows 10 / 11
+
+Python 3.10 or newer
+
+PowerShell 5.1 or PowerShell 7+
+
+Git (optional, recommended)
+
+## Verify Python installation(Powershell):
+```bash
+python --version
+```
+## 🚀 Quick Start
+
+1️⃣ Clone the repository
+```bash
+git clone https://github.com/<your-username>/seismic-early-detection.git
+cd seismic-early-detection
+```
+2️⃣ Allow local PowerShell scripts (one-time setup)
+```powershell
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+3️⃣ Initialize the project
+```powershell
+.\setup_seismic.ps1
+```
+
+## This script will:
+
+Create the folder structure
+
+Generate base configuration files
+
+Create a Python virtual environment
+
+Install all required dependencies
+
+4️⃣ Run the full pipeline
+```powershell
+.\deploy_seismic.ps1
+```
 
 ---
+
 
 ## 📊 Evaluation Focus
+Models are evaluated based on:
 
-Performance is evaluated using:
-- detection latency
-- false positive cost
-- robustness under noise
-- behavior under partial failure
+Detection latency
 
-Accuracy alone is insufficient.
+Robustness to noise
+
+False positive impact
+
+Behavior under partial system failures
+
+Accuracy alone is not the primary metric.
 
 ---
 
 ## 🌍 Potential Applications
+Seismic early warning research
 
-- Seismic early warning research
-- Infrastructure protection systems
-- Industrial vibration anomaly detection
-- Edge-based risk assessment platforms
+Infrastructure protection systems
+
+Industrial vibration anomaly detection
+
+Edge-based risk assessment platforms
 
 ---
 
 ## 🚧 Project Status
+Active research and iterative development.
 
-Active research & iterative development.
+Planned future work:
 
-See `roadmap.md` for planned milestones.
+Integration of real seismic datasets
+
+Edge device profiling and benchmarking
+
+Lightweight CNN-based models
+
+Uncertainty quantification and confidence calibration
+
+---
+
+## ⚠️ Disclaimer
+This project is intended for research and educational purposes only.
+
+It is not suitable for real-world seismic alerting or life-critical deployment.
+
+📄 License
+Licensed under the Apache License 2.0.
