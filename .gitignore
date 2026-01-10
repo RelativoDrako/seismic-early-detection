@@ -11,7 +11,7 @@ __pycache__/
 *.log
 *.tmp
 
-# Binarios pesados
+# DLL y binarios grandes
 *.dll
 *.so
 *.dylib
