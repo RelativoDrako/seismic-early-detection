@@ -1,17 +1,17 @@
 # Entorno virtual
 venv/
 
-# Archivos compilados de Python
+# Archivos compilados
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 
-# Archivos temporales
+# Logs y temporales
 *.log
 *.tmp
 
-# TensorFlow y librerías pesadas
+# Binarios pesados
 *.dll
 *.so
 *.dylib
