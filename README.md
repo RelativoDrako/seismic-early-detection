@@ -104,7 +104,7 @@ python --version
 
 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/<your-username>/seismic-early-detection.git
+git clone https://github.com/RelativoDrako/seismic-early-detection.git
 cd seismic-early-detection
 ```
 2️⃣ Allow local PowerShell scripts (one-time setup)
