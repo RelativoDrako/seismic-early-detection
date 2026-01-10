@@ -1,11 +1,9 @@
-﻿# Seismic Early Detection & Impact Prediction System
+# 🌎 Seismic Early Detection & Impact Prediction System
 
-Applied AI project focused on early seismic signal detection
-under real-world operational constraints.
+![Python](https://img.shields.io/badge/python-3.10%2B-blue)
+![License](https://img.shields.io/badge/license-Apache%202.0-green)
+![Status](https://img.shields.io/badge/status-research--active-orange)
 
-HEAD
-Edge-first. Low latency. Failure-aware.
-=======
 An **applied AI research project** focused on **early seismic signal detection and impact estimation** under **real-world operational constraints**.
 
 This repository is designed to demonstrate:
@@ -97,12 +95,11 @@ PowerShell 5.1 or PowerShell 7+
 
 Git (optional, recommended)
 
-
-### Verify Python installation(Powershell):
+## Verify Python installation(Powershell):
 ```bash
 python --version
 ```
-### 🚀 Quick Start
+## 🚀 Quick Start
 
 1️⃣ Clone the repository
 ```bash
@@ -117,8 +114,9 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```powershell
 .\setup_seismic.ps1
 ```
----
-### This script will:
+
+## This script will:
+
 Create the folder structure
 
 Generate base configuration files
@@ -126,7 +124,7 @@ Generate base configuration files
 Create a Python virtual environment
 
 Install all required dependencies
----
+
 4️⃣ Run the full pipeline
 ```powershell
 .\deploy_seismic.ps1
@@ -183,4 +181,3 @@ It is not suitable for real-world seismic alerting or life-critical deployment.
 
 📄 License
 Licensed under the Apache License 2.0.
-ff2511a15b14aabe0df3751f4655c513cd13254a
