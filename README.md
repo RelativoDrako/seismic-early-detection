@@ -181,3 +181,4 @@ It is not suitable for real-world seismic alerting or life-critical deployment.
 
 📄 License
 Licensed under the Apache License 2.0.
+
