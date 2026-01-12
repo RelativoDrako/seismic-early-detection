@@ -15,3 +15,7 @@ __pycache__/
 *.dll
 *.so
 *.dylib
+
+# Carpetas pesadas
+data/processed/*
+models/experimental/*
